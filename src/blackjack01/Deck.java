@@ -1,6 +1,7 @@
 package blackjack01;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Deck {
     private ArrayList<Card> cards;
@@ -17,6 +18,10 @@ public class Deck {
                 this.cards.add(new Card(cardSuit,cardValue));
             }
         }
+    }
+
+    public void shuffle(){
+        Collections.shuffle(cards);
     }
 
     public String toString(){
