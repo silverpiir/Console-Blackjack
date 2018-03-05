@@ -50,7 +50,11 @@ public class Deck {
         comingFrom.removeCard(0);
     }
 
-    // Returns total value of cards in deck
+    public int deckSize(){
+        return this.cards.size();
+    }
+
+    // Returns total value of cards in hand
     public int cardsValue(){
         int totalValue = 0;
         int aces = 0;
