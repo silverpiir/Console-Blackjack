@@ -38,8 +38,9 @@ public class Blackjack {
             dealerDeck.draw(playingDeck);
 
             while(true){
-                System.out.println("Your hand: ");
+                System.out.print("Your hand: ");
                 System.out.print(playerDeck.toString());
+                System.out.println("\nYour hand is valued at: " + playerDeck.cardsValue() + "\n");
             }
         }
 
