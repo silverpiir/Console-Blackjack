@@ -27,7 +27,7 @@ public class Deck {
     public String toString(){
         String cardListOutput = "";
         for(Card aCard : this.cards){
-            cardListOutput += "\n" + aCard.toString();
+            cardListOutput += "\n > " + aCard.toString();
         }
         return cardListOutput;
     }
